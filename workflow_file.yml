@@ -1,0 +1,11 @@
+name: <workflow-name>
+
+on:
+  push:
+    branches-ignore:
+      - master
+  workflow_dispatch:
+
+jobs:
+  check-replicas:
+    uses: <ref-of-the-reusable-workflow>
